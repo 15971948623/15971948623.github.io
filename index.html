@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飞行球玩法视频讲解</title>
+    <style>
+        .container{
+            width: 70%;
+            margin: 0 auto;
+        }
+        .container video{
+            width: 100%;
+        }
+        .container h4 {
+            color: red;
+        }
+        .text-container {
+            white-space: nowrap; /* 防止文本换行 */
+            overflow: hidden; /* 隐藏超出容器宽度的部分 */
+            text-overflow: ellipsis; /* 在文本溢出时显示省略号 */
+        }
+        .first-time-tip {
+        font-size: 4mm;
+        }
+        /* CSS 样式 */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>飞行球玩法视频讲解</h1>
+        
+        <!-- 本地视频 -->
+        <video id="myVideo" controls autoplay>
+            <source src="https://fei-1316876957.cos.ap-chengdu.myqcloud.com/teach/teach.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <!-- 文本 -->
+        <div class="text-container"></div>
+            <h3>这边给您讲一个飞行球小技巧:<span class="first-time-tip">(第一次玩的时候力度轻一点哦)</span></h3>
+            <ol>
+                <li>确保飞行球有足够的电量再对照视频进行操作。（亲亲尽量使用小功率充电头去进行充电哈，以免损伤电池寿命）</li>
+                <li>如果您对照着视频把飞行球丢出去之后，飞回来的时候容易落地，就增大丢出去的倾斜角度；反之如果觉得飞回来的时候太高了觉得接不住就减小倾斜的角度。</li>
+                <li>飞行球如果使用的过程中落地了，请及时用遥控器关闭飞行球，以防止乱跑乱撞，同时也可以省电，让您的体验时间更久哦~</li>
+            </ol>
+            <h4>有任何问题请先联系本店客服哦，一定帮您处理到位，谢谢您的支持～</h4>
+        </div>
+    </div>
+    <script>
+        var video = document.getElementById("myVideo");
+
+        // 当视频准备好播放时
+        video.addEventListener('canplay', function() {
+            video.play();
+        });
+    </script>
+</body>
+</html>
