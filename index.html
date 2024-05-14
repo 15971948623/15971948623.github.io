@@ -47,12 +47,19 @@
 </head>
  
 <body>
+ 
     <div id="contentToWrite" class="comments">
         <!-- 文本 "我爱你" -->
         谢馨宁我爱你
     </div>
     <canvas id="pinkboard" width="1920" height="947" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></canvas>
     <canvas id="canvas" width="1920" height="947"></canvas>
+     <audio autoplay loop>
+        <source src="love.mp3" type="audio/mpeg">
+        <!-- 如果浏览器不支持MP3格式的音频文件，可以提供其他格式的备选项 -->
+        <!-- <source src="your-audio-file.ogg" type="audio/ogg"> -->
+        Your browser does not support the audio element.
+    </audio>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://web.20it.cn/template/aixin/js/main.js?v1.0.269"></script>
     <script>
